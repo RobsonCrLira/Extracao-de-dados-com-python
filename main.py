@@ -26,7 +26,7 @@ for posts in all_pages:
         img = post.find(class_="wp-post-image")['src']
         all_posts.append({'title': title,
                           'preview': preview,
-                          'author': author,
+                          'author': author, 
                           'img': img,
                           'time': time})
         with open('posts.json', 'w') as json_file:
